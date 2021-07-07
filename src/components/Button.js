@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Button = (props) => {
     const isActive = props.active === props.name;
@@ -12,8 +13,13 @@ const Button = (props) => {
                 props.onButtonClick(props.name);
             }}
         >
-            <div>{props.name}</div>
-            <div>{props.icon}</div>
+            <Link
+                to={`${props.name}`}
+                className='w-full h-full p-3 flex justify-between items-center'
+            >
+                <div>{props.name}</div>
+                <div>{props.icon}</div>
+            </Link>
         </div>
     );
 };

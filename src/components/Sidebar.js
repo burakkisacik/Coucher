@@ -15,7 +15,10 @@ const Sidebar = () => {
     const [activeButton, setActiveButton] = useState('Search');
 
     const handleClick = (name) => {
-        setActiveButton(name);
+        setActiveButton((prevState) => {
+            return name;
+        });
+        console.log(name);
     };
 
     return (

@@ -11,6 +11,21 @@
     box-shadow: -6px -6px 14px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
     margin-right: 25px;
     margin-top: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.neumorphCard::after {
+    content: '';
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    background-color: transparent;
+    box-shadow: inset -6px -6px 14px #ffffff73,
+        inset 6px 6px 10px rgba(94, 104, 121, 0.288);
+    border-radius: 8px;
 }
 
 .neumorphButtonActive {
@@ -25,7 +40,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0;
     transition: 0.4s ease;
 }
 .neumorphButtonActive:hover {
@@ -43,7 +58,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0;
     transition: 0.4s ease;
 }
 .neumorphButton:hover {
@@ -91,4 +106,22 @@
 }
 .neumorphProfileInfo:hover {
     transform: scale(1.05);
+}
+
+.searchInputField {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -6px -6px 14px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.movieCardImages {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
 }

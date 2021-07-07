@@ -1,28 +1,14 @@
 import React from 'react';
+import MovieCard from './MovieCard';
 
-const Content = () => {
+const Content = (props) => {
+    console.log(props.movies);
     return (
-        <div className='flex-1 flex flex-wrap justify-center px-10 '>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
-            <div className='neumorphCard'></div>
+        <div className='flex-1 flex flex-wrap  px-10 '>
+            {props.movies &&
+                props.movies.map((item) => {
+                    return <MovieCard key={item.Title} movieInfo={item} />;
+                })}
         </div>
     );
 };
