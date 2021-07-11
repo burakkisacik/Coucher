@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import SearchInput from '../components/SearchInput';
-import { getMoviesByName } from '../utils/getMoviesByName';
 import Content from '../components/Content';
 
 const Search = () => {

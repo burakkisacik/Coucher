@@ -19,7 +19,7 @@ const SearchInput = (props) => {
     };
 
     return (
-        <div className='flex justify-center items-center mt-10'>
+        <div className='flex justify-center items-center mt-10  pr-20'>
             <div className='searchInputField'>
                 <FaSearch className='text-gray-500' />
                 <form className='w-full' onSubmit={handleSubmit}>

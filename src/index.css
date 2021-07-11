@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 .neumorphCard {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     background: #dde1e7;
     border-radius: 20px;
     box-shadow: -6px -6px 14px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
@@ -16,16 +16,21 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: 0.4s ease;
 }
 .neumorphCard::after {
     content: '';
     position: absolute;
-    height: 160px;
-    width: 160px;
+    height: 340px;
+    width: 340px;
     background-color: transparent;
     box-shadow: inset -6px -6px 14px #ffffff73,
         inset 6px 6px 10px rgba(94, 104, 121, 0.288);
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.neumorphCard:hover {
+    transform: scale(1.05);
 }
 
 .neumorphButtonActive {
@@ -121,7 +126,7 @@
 }
 
 .movieCardImages {
-    width: 90%;
-    height: 90%;
-    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
 }
