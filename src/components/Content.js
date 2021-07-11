@@ -7,7 +7,9 @@ const Content = (props) => {
         <div className='flex-1 flex flex-wrap  px-10 '>
             {props.movies &&
                 props.movies.map((item) => {
-                    return <MovieCard key={item.Title} movieInfo={item} />;
+                    if (item.Poster !== 'N/A') {
+                        return <MovieCard key={item.Title} movieInfo={item} />;
+                    }
                 })}
         </div>
     );

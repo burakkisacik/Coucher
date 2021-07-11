@@ -20,6 +20,9 @@ const Search = () => {
                     });
                 });
         }
+        return () => {
+            setSearchResult([]);
+        };
     }, [searchTerm]);
 
     const handleOnSearch = (searchText) => {

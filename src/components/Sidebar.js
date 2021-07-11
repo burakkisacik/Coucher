@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fa';
 
 const Sidebar = () => {
-    const [activeButton, setActiveButton] = useState('Search');
+    const [activeButton, setActiveButton] = useState('');
 
     const handleClick = (name) => {
         setActiveButton((prevState) => {
